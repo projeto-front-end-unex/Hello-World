@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;  
+  font-family: 'Poppins', sans-serif;   
+  color: #FFF;
+}
+
+/* Variaveis CSS */
+:root {
+  --primary: #FF206E;
+  --background: #0D1117;
+  --transition: all 0.25s;
+  --border: 2px solid var(--primary);
+}
+
+body{
+  background-color: var(--background);
+}
+
+/* Buttons */
+.btn{
+  border-radius: 8px;
+  border: var(--border);
+  padding: 10px 12px!important;
+  transition: var(--transition);
+}
+
+.btn-primary{
+  background-color: transparent;
+  width: 120px;
+}
+
+.btn-primary:hover{
+  background-color: var(--primary)!important;
+  border: var(--border)!important;
+}
+
+/* Navbar */
+.navbar{
+  background-color: var(--background);
+}
+
+.navbar .navbar-collapse .nav-link{
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+} 
+
+.navbar .navbar-collapse .nav-link:hover{
+  transition: var(--transition);
+  color: var(--primary); 
+}
+
+section{
+  margin: 200px 0px;
+}
+
+/* Hero Section */
+section.hero{
+  margin-top: 120px;
+}
+
+
+/* @media (max-witdh: 768px){
+  section.hero{
+    margin-top: 100px;
+  }
+} */
+
+section.hero .text-group .titulo {
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 119.5%; /* 66.92px */
+}
+
+section.hero .text-group .subtitulo {
+  font-size: 35.03px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 153%;
+}
+
+section.hero .text-group .subtitulo span{
+  color: #FF206E;
+}
