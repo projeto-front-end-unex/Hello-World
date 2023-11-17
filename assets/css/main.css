@@ -29,7 +29,6 @@ body{
 
 .btn-primary{
   background-color: transparent;
-  width: 120px;
 }
 
 .btn-primary:hover{
@@ -55,6 +54,10 @@ body{
 .navbar .navbar-collapse .nav-link:hover{
   transition: var(--transition);
   color: var(--primary); 
+}
+
+.navbar .navbar-collapse .btn-primary{
+  width: 120px;
 }
 
 section{
