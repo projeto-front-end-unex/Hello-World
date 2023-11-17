@@ -69,13 +69,6 @@ section.hero{
   margin-top: 120px;
 }
 
-
-/* @media (max-witdh: 768px){
-  section.hero{
-    margin-top: 100px;
-  }
-} */
-
 section.hero .text-group .titulo {
   font-size: 56px;
   font-style: normal;
@@ -92,4 +85,43 @@ section.hero .text-group .subtitulo {
 
 section.hero .text-group .subtitulo span{
   color: #FF206E;
+}
+
+/* Como Solucionamos Section */
+
+section.como-solucionamos {
+  position: relative;
+}
+
+section.como-solucionamos .top {
+  text-align: right;
+  height: 35%;
+}
+
+section.como-solucionamos .bottom {
+  text-align: right;
+  height: 50%;
+}
+
+section.como-solucionamos .top .titulo {
+  text-align: right;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+section.como-solucionamos .bottom .subtitulo {
+  text-align: right;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+section.como-solucionamos .barra {
+  background-color: var(--primary);
+  position: absolute;
+  top: 35%; 
+  left: 50%;
+  width: 100%; 
+  height: 50%; 
+  transform: translateX(-50%);
+  z-index: -1;
 }
