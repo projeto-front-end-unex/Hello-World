@@ -125,3 +125,21 @@ section.como-solucionamos .barra {
   transform: translateX(-50%);
   z-index: -1;
 }
+
+section.OrientacoesDicas h1.titulo{
+  font-size: 56px;
+  font-weight: 600;
+}
+
+section.OrientacoesDicas p{
+  font-size: 22px;
+  font-weight: 400;
+}
+
+section.OrientacoesDicas h1 span{
+  color: #FF206E;
+}
+
+section.OrientacoesDicas .text-group{
+  width: 70%;
+}
