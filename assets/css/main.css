@@ -11,7 +11,8 @@
 :root {
   --primary: #FF206E;
   --background: #0D1117;
-  --transition: all 0.25s;
+  --card-background: #161B22;
+  --transition: background-color 0.20s ease-in-out;
   --border: 2px solid var(--primary);
 }
 
@@ -62,6 +63,24 @@ body{
 
 section{
   margin: 200px 0px;
+}
+
+section .section-head {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+section .section-head h1 {
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; 
+}
+
+section .section-head h1 span{
+  color: var(--primary);
 }
 
 /* Hero Section */
@@ -142,4 +161,101 @@ section.OrientacoesDicas h1 span{
 
 section.OrientacoesDicas .text-group{
   width: 70%;
+}
+
+.jobs-container{
+  margin-bottom: 15px;
+}
+
+section.vagas-recentes .jobs-container .job-card {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 30px 22px;
+  border-radius: 11px;
+  border: var(--border);
+  background-color: var(--card-background);
+  transition: filter 0.3s ease;
+}
+
+section.vagas-recentes .jobs-container .job-card:hover {
+  transition: box-shadow 0.15s ease-in-out, transform 0.1s ease-in-out;
+  transform: scale(1.005);
+  box-shadow: 0px 0px 27.3px 0px #FF206E;
+}
+
+section.vagas-recentes .job-card .job-title {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 17px;
+}
+
+section.vagas-recentes .job-card .job-content {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0.14px;
+  opacity: 0.8;
+  display: -webkit-box;
+  overflow: hidden;
+  max-height: 231px;
+  min-height:  231px;
+  word-break: break-all;
+  margin-bottom: 17px;
+}
+
+section.vagas-recentes .job-card .job-details .row>.col-auto{
+  padding-right: 0!important;
+}
+
+section.vagas-recentes .job-card .job-details p{
+  margin-bottom: 0px!important;
+}
+
+section.vagas-recentes .job-card .job-details .company-details .logo-container {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #40465A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.vagas-recentes .job-card .job-details .company-details .logo-container img  {
+  width: 35px;
+  height: 35px;
+  border-radius: 10%;
+}
+
+section.vagas-recentes .job-card .job-details .company-details .company-name {
+  font-weight: 500;
+}
+
+section.vagas-recentes .job-card .job-details .company-details .location {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+section.vagas-recentes .job-card .job-details .company-details .location i{
+  color: var(--primary);
+}
+
+section.vagas-recentes .job-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 11px;
+  background: rgba(255, 32, 110, 0.050);
+  opacity: 0;
+  transition: opacity .2s;
+}
+
+section.vagas-recentes .job-card:hover .job-overlay {
+  opacity: 1;
 }
