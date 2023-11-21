@@ -14,6 +14,8 @@
   --card-background: #161B22;
   --transition: background-color 0.20s ease-in-out;
   --border: 2px solid var(--primary);
+  --radius: 11px;
+  --border-grey:2px solid #646464;
 }
 
 body{
@@ -66,7 +68,7 @@ section{
 }
 
 section .section-head {
-  height: 100px;
+  min-height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -143,6 +145,47 @@ section.como-solucionamos .barra {
   height: 50%; 
   transform: translateX(-50%);
   z-index: -1;
+}
+
+
+section.Recursos .cardRecursos {
+  padding: 40px 32px 32px 32px;
+  background-color:var(--card-background);
+  border: var(--border-grey);
+  border-radius: var(--radius);
+  width: 400px;
+}
+
+section.Recursos .cardRecursos:hover{
+  transition: box-shadow 0.15s ease-in-out, transform 0.1s ease-in-out;
+  transform: scale(1.005);
+  box-shadow: 0px 0px 27.3px 0px #FF206E;
+  border: var(--border);
+}
+
+section.Recursos .cardRecursos .icon{
+font-size: 100px;
+color: var(--primary);
+}
+
+section.Recursos .cardRecursos .titulo{
+  border: var(--primary);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 38.4px */
+  letter-spacing: 0.14px;
+  margin-bottom: 11px;
+}
+
+section.Recursos .cardRecursos .subtitulo{
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 32px */
+  letter-spacing: 0.14px;
+  min-height: 96px;
+  max-height: 96px;
 }
 
 section.OrientacoesDicas h1.titulo{
