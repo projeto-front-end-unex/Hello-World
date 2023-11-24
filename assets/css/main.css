@@ -39,6 +39,15 @@ body{
   border: var(--border)!important;
 }
 
+.btn-secondary{
+  background-color: var(--primary);
+}
+
+.btn-secondary:hover{
+  background-color: transparent!important;
+  border: var(--border)!important;
+}
+
 /* Navbar */
 .navbar{
   background-color: var(--background);
@@ -398,4 +407,91 @@ line-height: 160%; /* 35.2px */
 letter-spacing: 0.14px;
 min-height: 175px;
 max-height: 175px;  
+}
+
+/* Iniciando Página de Curriculos */
+section.gerador {
+  margin-top: 70px;
+}
+
+section.gerador .form-floating>.form-control-plaintext~label, .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
+  color: #CACACA;
+  transform: scale(.85) translateY(-0.5rem) translateX(0.15rem);
+}
+
+section.gerador .form-floating label:after{
+  background-color: var(--background)!important;
+  color: #CACACA!important;
+}
+
+@media screen and (min-width: 992px) {
+  section.gerador .row>.col-lg-2{
+    padding-right: 0;
+  }
+}
+
+section.gerador .form-control {
+  border-radius: 8px;
+  border: var(--border);
+  background: var(--background)!important;
+  padding: 10px;
+  color: #FFF!important;
+  font-weight: 500;
+}
+
+section.gerador .form-control:focus {
+  border-color: var(--primary); 
+  box-shadow: 0px 0px 18.6px 0px var(--primary);
+}
+
+section.gerador textarea.form-control{
+  min-height: 180px!important;
+}
+
+section.gerador textarea::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+section.gerador textarea::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 6px;
+}
+
+section.gerador #picture-input {
+  display: none;
+}
+
+section.gerador .picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 189.99px;
+  aspect-ratio: 16/9;
+  border: var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: var(--background);
+}
+
+section.gerador .picture:hover {
+  transition: box-shadow 0.15s ease-in-out, transform 0.1s ease-in-out;
+  transform: scale(1.005);
+  box-shadow: 0px 0px 20px 0px #FF206E;
+}
+
+section.gerador .picture:focus {
+  color: #777;
+  background: #ccc;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+section.gerador .picture-img {
+  padding: 15px;
+  max-width: 100%;
+  max-height: 189.99px;
+}
+
+section.gerador .btn-group-lg .btn {
+  padding: 16px!important;
 }
