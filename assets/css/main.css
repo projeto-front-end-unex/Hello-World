@@ -28,24 +28,23 @@ body{
   border: var(--border);
   padding: 10px 12px!important;
   transition: var(--transition);
+  border: var(--border)!important;
 }
 
 .btn-primary{
-  background-color: transparent;
+  background-color: transparent!important;
 }
 
 .btn-primary:hover{
   background-color: var(--primary)!important;
-  border: var(--border)!important;
 }
 
 .btn-secondary{
-  background-color: var(--primary);
+  background-color: var(--primary)!important;
 }
 
 .btn-secondary:hover{
   background-color: transparent!important;
-  border: var(--border)!important;
 }
 
 /* Navbar */
