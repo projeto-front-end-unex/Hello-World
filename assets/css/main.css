@@ -304,7 +304,7 @@ section.vagas-recentes .job-overlay {
   border-radius: 11px;
   background: rgba(255, 32, 110, 0.050);
   opacity: 0;
-  transition: opacity .2s;
+  transition: opacity .2s; 
 }
 
 section.vagas-recentes .job-card:hover .job-overlay {
@@ -356,6 +356,14 @@ section.tecnologiasEmAlta div.Card a.tec-overlay{
   height: 100%;
   border-radius: 11px;
   transition: opacity .2s;
+}
+
+@media screen and (max-width: 420px) {
+  section.tecnologiasEmAlta div.Card p{
+    font-size: 16px;
+    min-height: 160px;
+    max-height: 160px;
+  }
 }
 
 /* Iniciando arquivo dicas.html */
