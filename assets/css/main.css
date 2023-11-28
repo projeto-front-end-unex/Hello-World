@@ -561,7 +561,6 @@ section.BuscarVagas div.Cardselect div.text-group-selected p{
 section.BuscarVagas div.CardAreas{
   background-color: var(--card-background);
   padding: 32px 20px;
-  align-items: center;
   max-height: 170px;
   min-height: 170px;
   border-radius: 11px;
@@ -590,16 +589,6 @@ section.BuscarVagas div.CardAreas:hover{
 @media screen and (max-width: 1399px){
   section.BuscarVagas div.CardAreas div.text-group h2{
     font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 1199px){
-  section.BuscarVagas div.CardAreas div.text-group{
-    text-align: center;
-  }
-
-  section.BuscarVagas div.CardAreas div.maleta{
-    display: none;    
   }
 }
 
