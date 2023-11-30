@@ -102,7 +102,7 @@ section.hero .text-group .titulo {
   font-size: 56px;
   font-style: normal;
   font-weight: 600;
-  line-height: 119.5%; /* 66.92px */
+  line-height: 119.5%;
 }
 
 section.hero .text-group .subtitulo {
@@ -114,6 +114,26 @@ section.hero .text-group .subtitulo {
 
 section.hero .text-group .subtitulo span{
   color: var(--primary);
+}
+
+@media screen and (max-width: 1400px) {
+  section.hero .text-group .titulo {
+    font-size: 46px;
+  }
+  
+  section.hero .text-group .subtitulo {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section.hero .text-group .titulo {
+    font-size: 30px;
+  }
+  
+  section.hero .text-group .subtitulo {
+    font-size: 25px;
+  }
 }
 
 /* Como Solucionamos Section */
