@@ -82,11 +82,26 @@ section .section-head {
   justify-content: center;
   margin-bottom: 15px;
 }
+
 section .section-head h1 {
   font-size: 50px;
   font-style: normal;
   font-weight: 600;
   line-height: 110%; 
+}
+
+@media screen and (max-width: 768px) {
+  section{
+    margin: 100px 0px;
+  }
+  
+  section .section-head {
+    margin-bottom: 30px;
+  }
+  
+  section .section-head h1 {
+    font-size: 36px;
+  }
 }
 
 section .section-head h1 span{
@@ -267,7 +282,7 @@ section.Recursos .cardRecursos .subtitulo{
 }
 
 section.OrientacoesDicas h1.titulo{
-  font-size: 56px;
+  /* font-size: 56px; */
   font-weight: 600;
 }
 
