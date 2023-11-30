@@ -164,6 +164,18 @@ section.como-solucionamos .bottom .subtitulo {
   font-weight: 300;
 }
 
+@media screen and (max-width: 1200px) {
+  section.como-solucionamos .top .titulo {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  
+  section.como-solucionamos .bottom .subtitulo {
+    text-align: right;
+    font-size: 25px;
+  }
+}
+
 section.como-solucionamos .barra {
   background-color: var(--primary);
   position: absolute;
@@ -173,6 +185,42 @@ section.como-solucionamos .barra {
   height: 50%; 
   transform: translateX(-50%);
   z-index: -1;
+}
+
+@media screen and (max-width: 992px) {
+  section.como-solucionamos .row {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  section.como-solucionamos .row>.img-container {
+    padding: 0px!important;
+    width: 100%;
+  }
+  
+  section.como-solucionamos .text-head {
+    text-align: center;
+    height: auto;
+    background-color: var(--primary);
+    padding: 40px 0px;
+  }
+  
+  section.como-solucionamos .top {
+    margin-bottom: 0.5rem;
+  }
+  
+  section.como-solucionamos .top .titulo {
+    text-align: center;
+  }
+  
+  section.como-solucionamos .bottom .subtitulo {
+    text-align: center;
+  }
+
+  section.como-solucionamos .barra {
+    display: none;
+  }
 }
 
 section.Recursos .cardRecursos {
