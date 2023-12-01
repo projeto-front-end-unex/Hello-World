@@ -75,6 +75,12 @@ section{
   margin: 200px 0px;
 }
 
+@media screen and (max-width: 768px){
+  section{
+    margin: 100px 0px;
+  }
+}
+
 section .section-head {
   min-height: 100px;
   display: flex;
@@ -458,29 +464,18 @@ section.Explorando{
   margin-top: 120px;
 }
 
-section.Explorando h1.titulo{
-font-size: 56px;
-font-style: normal;
-font-weight: 600;
-line-height: 110%; /* 61.6px */
-margin-bottom: 27px;
-}
-
 section.Explorando h2.subtitulo{
 font-size: 25px;
 font-style: normal;
 font-weight: 300;
-line-height: 110%; /* 27.5px */
-margin-bottom: 40px;
-
 }
 
 section.Explorando .CardTermo{
 border: var(--border-grey);
 border-radius: var(--radius);
 padding: 40px 32px 40px 32px;
-gap: 52px;
-background: #0F172A;
+border-radius: 11px;
+background: #161B22;
 position: relative;
 }
 
@@ -492,60 +487,120 @@ section.Explorando div.CardTermo h2.subtitulo{
 }
 
 section.Explorando div.CardTermo p.paragrafo{
-font-size: 22px;
-font-style: normal;
-font-weight: 400;
-line-height: 160%; /* 35.2px */
-letter-spacing: 0.14px;
-min-height: 175px;
-max-height: 175px;  
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 35.2px */
+  letter-spacing: 0.14px;
+  min-height: 175px;
+  max-height: 175px;  
 }
+
+@media screen and (max-width: 768px) {
+  section.Explorando div.CardTermo p.paragrafo{
+    min-height: 220px;
+    max-height: 220px;  
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    section.Explorando div.CardTermo p.paragrafo{
+      min-height:168px;
+      max-height: 168px;  
+      font-size: 15px;
+      }
+    }
 
 /* Projetos Section */
 
 section.Projetos div.words {
   padding: 0px 50px;
-  gap: 80px;
-  }
+}
   
-  section.Projetos h1.titulo{
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 110%; /* 61.6px */
-  margin-top: 85px;
-  margin-bottom: 25px;
-  }
-  
-  section.Projetos h2.subtitulo{
+section.Projetos h2.subtitulo{
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 160%; /* 35.2px */
+}
+
+section.Projetos iframe{
+  width: 100%;
+  height: 450px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 72.9px 0px rgba(255, 255, 255, 0.29);
+}
+
+@media screen and (max-width: 768px) {
+  section.Projetos iframe{
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  section.Projetos iframe{
+    height: 200px;
+  }
+}
+
+/* Montando Section */
+  
+section.Montando h2.subtitulo{
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 35.2px */
+}
+section.Montando iframe{
+  width: 100%;
+  height: 450px;
+  border-radius:20px;
+  box-shadow: 0px 0px 72.9px 0px rgba(255, 255, 255, 0.29);
+}
+
+@media screen and (max-width: 1200px) {
+  section.Montando .row {
+    display: flex;
+    flex-direction: column-reverse;
   }
 
-  /* Montando Section */
+  /* section.Montando h2.subtitulo{
+    margin-bottom: 30px;
+  } */
+}
 
-  section.Montando div.words{
-    padding: 0px 50px;
-    gap: 80px;
+@media screen and (max-width: 768px) {
+  section.Montando iframe{
+    height: 300px;
   }
-  
-  section.Montando h1.titulo{
-    font-size: 56px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 110%; /* 61.6px */
-    margin-top: 85px;
-    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 576px) {
+  section.Montando iframe{
+    height: 200px;
   }
-  
-  section.Montando h2.subtitulo{
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%; /* 35.2px */
+}
+
+/* Oportunidades Section */
+
+section.Oportunidades .imagem{
+  flex-shrink: 0;
+  padding: 0px 5px;
+}
+
+section.Oportunidades h2.subtitulo{
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%; /* 26.4px */
+  padding: 0px !important;
+}
+
+@media screen and (min-width: 992px) {
+  section.Oportunidades h2.subtitulo{
+    margin-bottom: 50px;
   }
+}
 
 /* Iniciando Página de Curriculos */
 section.gerador {
@@ -633,7 +688,6 @@ section.gerador .picture-img {
 section.gerador .btn-group-lg .btn {
   padding: 16px!important;
 }
-
 
 /* Pagina de Vagas */
 
