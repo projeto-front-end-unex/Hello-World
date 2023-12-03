@@ -75,9 +75,17 @@ section{
   margin: 200px 0px;
 }
 
+section:first-of-type {
+  margin-top: 120px!important;
+}
+
 @media screen and (max-width: 768px){
   section{
     margin: 100px 0px;
+  }
+  
+  section:first-of-type {
+    margin-top: 70px!important;
   }
 }
 
@@ -94,19 +102,29 @@ section .section-head h1 {
   font-style: normal;
   font-weight: 600;
   line-height: 110%; 
+  margin-bottom: 30px;
+}
+
+section .section-head h2 {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 300;
 }
 
 @media screen and (max-width: 768px) {
-  section{
-    margin: 100px 0px;
-  }
-  
   section .section-head {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   
   section .section-head h1 {
     font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  section .section-head h2 {
+    font-size: 20px;
+    text-align: justify;
+    line-height: 160%;
   }
 }
 
@@ -124,13 +142,6 @@ section.hero .text-group .titulo {
   font-style: normal;
   font-weight: 600;
   line-height: 119.5%;
-}
-
-section.hero .text-group .subtitulo {
-  font-size: 35.03px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 153%;
 }
 
 section.hero .text-group .subtitulo span{
@@ -224,7 +235,7 @@ section.como-solucionamos .barra {
     text-align: center;
     height: auto;
     background-color: var(--primary);
-    padding: 40px 0px;
+    padding: 40px 20px;
   }
   
   section.como-solucionamos .top {
@@ -241,6 +252,29 @@ section.como-solucionamos .barra {
 
   section.como-solucionamos .barra {
     display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.como-solucionamos .row>.img-container {
+    background-color: #7d8ba4;
+  }
+  
+  section.como-solucionamos .text-head {
+    font-size: 36px;
+  }
+  
+  section.como-solucionamos .bottom .subtitulo {
+    font-size: 20px;
+    text-align: justify;
+    line-height: 160%;
+  }
+  
+  section.como-solucionamos .text-head {
+    text-align: center;
+    height: auto;
+    background-color: var(--primary);
+    padding: 25px 40px;
   }
 }
 
@@ -288,11 +322,10 @@ section.Recursos .cardRecursos .subtitulo{
 }
 
 section.OrientacoesDicas h1.titulo{
-  /* font-size: 56px; */
   font-weight: 600;
 }
 
-section.OrientacoesDicas p{
+section.OrientacoesDicas h2{
   font-size: 22px;
   font-weight: 400;
 }
@@ -464,12 +497,6 @@ section.Explorando{
   margin-top: 120px;
 }
 
-section.Explorando h2.subtitulo{
-font-size: 25px;
-font-style: normal;
-font-weight: 300;
-}
-
 section.Explorando .CardTermo{
 border: var(--border-grey);
 border-radius: var(--radius);
@@ -521,7 +548,7 @@ section.Projetos h2.subtitulo{
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 160%; /* 35.2px */
+  line-height: 160%;
 }
 
 section.Projetos iframe{
@@ -563,10 +590,6 @@ section.Montando iframe{
     display: flex;
     flex-direction: column-reverse;
   }
-
-  /* section.Montando h2.subtitulo{
-    margin-bottom: 30px;
-  } */
 }
 
 @media screen and (max-width: 768px) {
@@ -603,6 +626,7 @@ section.Oportunidades h2.subtitulo{
 }
 
 /* Iniciando Página de Curriculos */
+
 section.gerador {
   margin-top: 70px;
 }
