@@ -10,34 +10,67 @@
     <link rel="shortcut icon" href="assets/img/brand/brand-favicon.svg" type="image/x-icon">
   </head>
   <body>  
-  <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"><img src="/assets/img/brand/brand-icon.svg" alt=""></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto gap-4">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Recursos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Vagas Recentes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Dicas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Tecnologias</a>
-          </li>
-        </ul>
-        <div class="navbar-nav gap-3">
-          <a href="curriculo.html" class="btn btn-primary">Currículo</a>
-          <a href="vagas.html" class="btn btn-primary">Vagas</a>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="/assets/img/brand/brand-icon.svg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="offcanvas text-bg-dark offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav  gap-2 text-end">
+              <li class="nav-item">
+                <a class="nav-link" href="#recursos">Recursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#vagas">Vagas Recentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#dicas">Dicas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tecnologias">Tecnologias</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Inicie sua carreira
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark text-end">
+                  <li><a class="dropdown-item" href="curriculo.html">Procurar Vagas</a></li>
+                  <li><a class="dropdown-item" href="vagas.html">Criar Currículo</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="collapse navbar-collapse d-lg-block" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto gap-4">
+            <li class="nav-item">
+              <a class="nav-link" href="#recursos">Recursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#vagas">Vagas Recentes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#dicas">Dicas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tecnologias">Tecnologias</a>
+            </li>
+          </ul>
+          <div class="navbar-nav gap-3">
+            <a href="curriculo.html" class="btn btn-primary">Currículo</a>
+            <a href="vagas.html" class="btn btn-primary">Vagas</a>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
   
   <section class="gerador">
     <div class="container">

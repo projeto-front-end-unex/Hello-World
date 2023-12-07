@@ -626,6 +626,10 @@ section.Oportunidades h2.subtitulo{
   padding: 0px !important;
 }
 
+section.Oportunidades .d-flex:hover{
+filter: opacity(0.6);
+}
+
 @media screen and (min-width: 992px) {
   section.Oportunidades h2.subtitulo{
     margin-bottom: 50px;
