@@ -847,6 +847,10 @@ section.BuscarVagas .job-card .job-details .company-details .logo-container img 
 
 section.BuscarVagas .job-card .job-details .company-details .company-name {
   font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 150px;
 }
 
 section.BuscarVagas .job-card .job-details .company-details .location {
