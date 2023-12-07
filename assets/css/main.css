@@ -721,11 +721,11 @@ section.BuscarVagas div.Cardselect{
   box-shadow: 0px 0px 27.3px 0px var(--primary);
 }
 
-section.BuscarVagas div.Cardselect div.text-group-selected h2{
+section.BuscarVagas div.Cardselect h2{
   color: var(--primary);
 }
 
-section.BuscarVagas div.Cardselect div.text-group-selected p{
+section.BuscarVagas div.Cardselect p{
   color: var(--primary);
 }
 
@@ -734,6 +734,7 @@ section.BuscarVagas div.CardAreas{
   padding: 32px 20px;
   max-height: 170px;
   min-height: 170px;
+  align-items: center;
   border-radius: 11px;
   border: var(--border);
   gap: 10px;
@@ -748,6 +749,7 @@ section.BuscarVagas div.CardAreas div.text-group p{
   font-size: 14px;
   font-weight: 500;
   opacity: 0.5;
+  margin-bottom: 0!important;
 }
 
 section.BuscarVagas div.CardAreas:hover{
@@ -763,8 +765,8 @@ section.BuscarVagas div.CardAreas:hover{
   }
 }
 
-.jobs-container{
-  margin-top: 150px;
+section.BuscarVagas .jobs-container{
+  margin-top: 120px;
   margin-bottom: 15px;
 }
 
