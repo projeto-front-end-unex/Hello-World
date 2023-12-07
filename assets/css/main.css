@@ -49,10 +49,10 @@ body{
 
 /* Navbar */
 .navbar{
-  background-color: var(--background);
+  background-color: var(--background)!important;
 }
 
-.navbar .navbar-collapse .nav-link{
+.navbar .navbar-collapse .nav-link, .offcanvas .nav-link{
   color: #FFF;
   font-family: Poppins;
   font-size: 14px;
@@ -60,9 +60,16 @@ body{
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.5px;
-} 
+}
 
-.navbar .navbar-collapse .nav-link:hover{
+.navbar .offcanvas .nav-link{
+  font-size: 17px;
+}
+.offcanvas{
+  width: 300px!important;
+}
+
+.navbar .navbar-collapse .nav-link:hover, .offcanvas .nav-link:hover{
   transition: var(--transition);
   color: var(--primary); 
 }
