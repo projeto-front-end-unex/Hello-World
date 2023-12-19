@@ -636,6 +636,11 @@ filter: opacity(0.6);
   }
 }
 
+section.Oportunidades h2.subtitulo a{
+  color: white;
+  text-decoration:none;
+}
+
 /* Iniciando Página de Curriculos */
 
 section.gerador {
