@@ -1,5 +1,5 @@
 async function fetchVagas(termo, card) {
-  const response = await fetch(`http://localhost:3000/api/jobs/${termo}`);
+  const response = await fetch(`https://techjobs.kauarodrigues.com.br/jobs/${termo}.json`);
   const jobsData = await response.json(); 
   const jobsContainer = document.getElementById('jobs-container');
   
